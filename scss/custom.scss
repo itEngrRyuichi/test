@@ -1,0 +1,30 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+//font-family: 'Nanum Gothic', sans-serif;
+
+.global-navigation{
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.application-form{
+    font-family: 'Nanum Gothic', sans-serif;
+
+    h1.main-title{
+        font-size: 25px;
+    }
+    .orderAndQuotation-section{
+        .form-check{
+            input, label{
+                font-size: 15px;
+            }
+        }
+    }
+    .orderer-section{
+        .orderer-label{
+            font-size: 20px;
+            background: linear-gradient(145deg, #fff 5%, #f6d5f7 30%, #fbe9d7 60%, #fff 90%)
+            //background: linear-gradient(#e66465, #9198e5);
+        }
+    }
+}
