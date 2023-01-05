@@ -5,23 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title>フジイカラーリプロ テストサイト</title>
+    <title>フジイカラーリプロ</title>
 </head>
 <body>
     <div class="global-navigation">
         <div class="container">
             <ul class="nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">link 1</a>
+                    <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">link 2</a>
+                    <a href="#" class="nav-link">会社案内</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">link 3</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">link 4</a>
+                    <a href="#" class="nav-link">メールフォーム</a>
                 </li>
             </ul>
         </div>
