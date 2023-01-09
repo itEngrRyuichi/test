@@ -3,10 +3,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 //font-family: 'Nanum Gothic', sans-serif;
 
+// navigation.php
 .global-navigation{
     background: rgba(255, 255, 255, 0.5);
 }
 
+//index.php
+
+// contents.php
+.contents-container{
+    font-family: 'Nanum Gothic', sans-serif;
+
+    h1.main-title{
+        font-size: 25px;
+    }
+
+    h3.sub-title{
+        margin-left: 10px;
+        padding-left: 30px;
+        font-size: 20px;
+        background: linear-gradient(145deg, #ffffff 10%, #f6d5f7 30%, #fbe9d7 60%, #ffffff00 90%);
+    }
+
+    p{
+        font-size: 14px;
+        line-height: 40px;
+    }
+}
+
+// form.php
 .application-form{
     font-family: 'Nanum Gothic', sans-serif;
 
@@ -23,8 +48,7 @@
     .orderer-section{
         .orderer-label{
             font-size: 20px;
-            background: linear-gradient(145deg, #fff 5%, #f6d5f7 30%, #fbe9d7 60%, #fff 90%)
-            //background: linear-gradient(#e66465, #9198e5);
+            background: linear-gradient(145deg, #fff 5%, #f6d5f7 30%, #fbe9d7 60%, #fff 90%);
         }
     }
 }
