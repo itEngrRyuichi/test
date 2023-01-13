@@ -10,4 +10,4 @@
     <title>フジイカラーリプロ</title>
 </head>
 <body>
-<?php include('./navigation.php'); ?>
+<?php /* include('./navigation.php'); */ ?>
