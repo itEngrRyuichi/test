@@ -30,7 +30,8 @@ include('./common/upper_html.php');
         if (isset($_POST['bank']) && $_POST['bank'] == "on") {
             $text .= "お支払方法: 銀行振り込み \n";
         }
-        $header = "From: me@example.com";
+        $header = "From: it.engr.ryuichi@gmail.com";
+        mb_send_mail( $to, $subject, $text, $header);
     ?>
     <div class="text-center m-5">
         お買い上げありがとうございました。<br>
