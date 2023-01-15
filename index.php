@@ -14,12 +14,15 @@ include('./common/upper_html.php');
                     <label for="wallpaper" class="form-check-label">ウォールペーパー</label>
                 </div>
                 <label for="design" class="">柄・デザイン</label>
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-3">
                         <div class="form-check mx-5">
                             <input type="radio" class="form-check-input" id="kumamon" name="kumamon" checked>
                             <label for="kumamon" class="form-check-label">くまもん</label>
                         </div>
+                    </div>
+                    <div class="col-7 designPics">
+                        <img src="./img/kumamon.png" alt="くまモン壁紙01">
                     </div>
                 </div>
                 <label for="size" class="">サイズ</label>
@@ -75,48 +78,50 @@ include('./common/upper_html.php');
                 </div>
             </div>
             <label class="orderer-label mt-3 mb-1 px-4 d-flex">お支払方法</label>
-            <<div class="order d-flex mx-5 my-3">
+            <div class="order d-flex mx-5 my-3">
                 <div class="form-check mx-3">
-                    <input type="radio" class="form-check-input" id="credit" name="credit" checked>
+                    <input type="radio" class="form-check-input" id="credit" name="creditorbank" value="credit" checked onchange="creditform_on();" >
                     <label for="credit" class="form-check-label">クレジットカード</label>
                 </div>
                 <div class="form-check mx-3">
-                    <input type="radio" class="form-check-input" id="bank" name="bank">
+                    <input type="radio" class="form-check-input" id="bank" name="creditorbank" value="bank" onchange="creditform_off();">
                     <label for="bank" class="form-check-label">銀行振り込み</label>
                 </div>
             </div>
-            <div class="creditInfo row mx-5 my-3">
-                <span class="d-flex mx-5">カード</span>
-                <div class="d-flex cardnumber mx-5">
-                    <input type="text" id="first" class="cc-num" type="text" maxlength="4" name="first" placeholder="&#9679;&#9679;&#9679;&#9679;">
-                    <input type="text" id="second" class="cc-num" type="text" maxlength="4" name="second" placeholder="&#9679;&#9679;&#9679;&#9679;">
-                    <input type="text" id="third" class="cc-num" type="text" maxlength="4" name="third" placeholder="&#9679;&#9679;&#9679;&#9679;">
-                    <input type="text" id="fourth" class="cc-num" type="text" maxlength="4" name="fourth" placeholder="&#9679;&#9679;&#9679;&#9679;">
-                </div>
-            </div>
-            <div class="creditInfo row mx-5 my-3">
-                <div class="col-6 mx-5">
-                    <span>名前</span>
-                    <input type="text" id="cardname" name="cardname" class="cardname w-100" placeholder="ヤマダ タロウ">
-                </div>
-                <div class="col-12"></div>
-                <div class="col-4 mx-5 my-3">
-                    <span>有効期限</span>
-                    <div class="row">
-                        <div class="col-4">
-                            <input type="text" id="exmonth" name="exmonth" class="exmonth w-100" placeholder="01">
-                        </div>
-                        <div class="col-1">
-                            <span>/</span>
-                        </div>
-                        <div class="col-6">
-                            <input type="text" id="exyear" name="exyear" class="exyear w-100" placeholder="2026">
-                        </div>
+            <div id="creditcard">
+                <div class="creditInfo row mx-5 my-3">
+                    <span class="d-flex mx-5">カード</span>
+                    <div class="d-flex cardnumber mx-5">
+                        <input type="text" id="first" class="cc-num" type="text" maxlength="4" name="first" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                        <input type="text" id="second" class="cc-num" type="text" maxlength="4" name="second" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                        <input type="text" id="third" class="cc-num" type="text" maxlength="4" name="third" placeholder="&#9679;&#9679;&#9679;&#9679;">
+                        <input type="text" id="fourth" class="cc-num" type="text" maxlength="4" name="fourth" placeholder="&#9679;&#9679;&#9679;&#9679;">
                     </div>
                 </div>
-                <div class="col-2 mx-5 my-3">
-                    <span>CSV番号</span>
-                    <input type="text" id="seccode" name="seccode" class="seccode">
+                <div class="creditInfo row mx-5 my-3">
+                    <div class="col-6 mx-5">
+                        <span>名前</span>
+                        <input type="text" id="cardname" name="cardname" class="cardname w-100" placeholder="ヤマダ タロウ">
+                    </div>
+                    <div class="col-12"></div>
+                    <div class="col-4 mx-5 my-3">
+                        <span>有効期限</span>
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="text" id="exmonth" name="exmonth" class="exmonth w-100" placeholder="01">
+                            </div>
+                            <div class="col-1">
+                                <span>/</span>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" id="exyear" name="exyear" class="exyear w-100" placeholder="2026">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 mx-5 my-3">
+                        <span>CSV番号</span>
+                        <input type="text" id="seccode" name="seccode" class="seccode">
+                    </div>
                 </div>
             </div>
         </div>

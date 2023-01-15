@@ -4,7 +4,6 @@ include('./common/upper_html.php');
 <div class="application-form container">
     <form action="complete.php" method="post">
         <h1 class="main-title text-center my-5">ご注文確認</h1>
-        
         <?php if (!empty($_POST['btn_confirm'])): ?>
         <div class="orderer-section">
             <label class="orderer-label mt-3 mb-1 px-4 d-flex">商品情報</label>
@@ -67,7 +66,7 @@ include('./common/upper_html.php');
             <input type="hidden" name="phone" value="<?= $_POST['phone'];?>">
             <input type="hidden" name="mail" value="<?= $_POST['mail'];?>">
             <label class="orderer-label mt-3 mb-1 px-4 d-flex">お支払方法</label>
-            <?php if (isset($_POST['credit']) && $_POST['credit'] == "on"):?>
+            <?php if (isset($_POST['creditorbank']) && $_POST['creditorbank'] == "credit"):?>
                 <div class="creditInfo mx-5">
                     <div class="row">
                         <div class="col-2">お支払方法</div>
@@ -92,7 +91,7 @@ include('./common/upper_html.php');
                         <div class="col-5">●●●</div>
                     </div>
                 </div>
-                <input type="hidden" name="credit" value="<?= $_POST['credit'];?>">
+                <input type="hidden" name="creditorbank" value="<?= $_POST['creditorbank'];?>">
                 <input type="hidden" name="first" value="<?= $_POST['first'];?>">
                 <input type="hidden" name="second" value="<?= $_POST['second'];?>">
                 <input type="hidden" name="third" value="<?= $_POST['third'];?>">
@@ -102,7 +101,7 @@ include('./common/upper_html.php');
                 <input type="hidden" name="exyear" value="<?= $_POST['exyear'];?>">
                 <input type="hidden" name="seccode" value="<?= $_POST['seccode'];?>">
             <?php endif;?>
-            <?php if (isset($_POST['bank']) &&$_POST['bank'] == "on"):?>
+            <?php if (isset($_POST['creditorbank']) &&$_POST['creditorbank'] == "bank"):?>
                 <div class="col-2">銀行振り込み</div>
                 <input type="hidden" name="bank" value="<?= $_POST['bank'];?>">
             <?php endif;?>

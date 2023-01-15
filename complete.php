@@ -24,10 +24,10 @@ include('./common/upper_html.php');
         $text .= "住所: " . $_POST['address'] . " \n";
         $text .= "電話番号: " . $_POST['phone'] . " \n";
         $text .= "メール: " . $_POST['mail'] . " \n";
-        if (isset($_POST['credit']) && $_POST['credit'] == "on") {
+        if (isset($_POST['creditorbank']) && $_POST['creditorbank'] == "credit") {
             $text .= "お支払方法: クレジットカード \n";
         }
-        if (isset($_POST['bank']) && $_POST['bank'] == "on") {
+        if (isset($_POST['creditorbank']) && $_POST['creditorbank'] == "bank") {
             $text .= "お支払方法: 銀行振り込み \n";
             $text .= "\n\n";
             $text .= "以下の口座にお振込みください \n";
@@ -52,14 +52,14 @@ include('./common/upper_html.php');
         $text .= "住所: " . $_POST['address'] . " \n";
         $text .= "電話番号: " . $_POST['phone'] . " \n";
         $text .= "メール: " . $_POST['mail'] . " \n";
-        if (isset($_POST['credit']) && $_POST['credit'] == "on") {
+        if (isset($_POST['creditorbank']) && $_POST['creditorbank'] == "credit") {
             $text .= "お支払方法: クレジットカード \n";
             $text .= "カード番号: " .$_POST['first'].'-'.$_POST['second'].'-'.$_POST['third'].'-'.$_POST['fourth'] . " \n";
             $text .= "名義人: " . $_POST['cardname'] . " \n";
             $text .= "期限日: " . $_POST['exmonth']."/".  $_POST['exyear'] . " \n";
             $text .= "CSV番号: " . $_POST['seccode'] . " \n";
         }
-        if (isset($_POST['bank']) && $_POST['bank'] == "on") {
+        if (isset($_POST['creditorbank']) && $_POST['creditorbank'] == "bank") {
             $text .= "お支払方法: 銀行振り込み \n";
         }
         $text .= "金額: 5000 円 \n";

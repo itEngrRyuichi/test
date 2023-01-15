@@ -7,3 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .2)`
   });
 });
+
+function creditform_on() {
+  document.getElementById("creditcard").style.display = "block";
+}
+
+function creditform_off() {
+  document.getElementById("creditcard").style.display = "none";
+}
