@@ -75,6 +75,7 @@ include('./common/upper_html.php');
             </div>
 
             <div class="productInfo mx-5 my-3" id="wall2" style="display: none;">
+                <hr>
                 <label for="design" class="">柄・デザイン (<span id="wall_count">2</span>枚目)</label>
                 <div class="row align-items-center  mx-5">
                     <div class="col-2 designPics">
@@ -141,6 +142,7 @@ include('./common/upper_html.php');
             </div>
 
             <div class="productInfo mx-5 my-3" id="wall3" style="display: none;">
+                <hr>
                 <label for="design" class="">柄・デザイン (<span id="wall_count">3</span>枚目)</label>
                 <div class="row align-items-center  mx-5">
                     <div class="col-2 designPics">
