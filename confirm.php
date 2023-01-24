@@ -27,7 +27,7 @@ include('./common/upper_html.php');
                     echo "<script>alert('クレジットカード情報を正しく入力してください')</script>";
                     echo '<script>history.back();</script>';
                 }
-                if (!preg_match("/^[5]/", $_POST['first']) && !preg_match("/^[4]/", $_POST['first'])) {
+                if (!empty($_POST['first']) && !preg_match("/^[5]/", $_POST['first']) && !preg_match("/^[4]/", $_POST['first'])) {
                     echo "<script>alert('VISAとMasterCardカード以外は使えません。')</script>";
                     echo '<script>history.back();</script>';
                 }
