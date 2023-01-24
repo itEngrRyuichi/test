@@ -73,6 +73,11 @@ include('./common/upper_html.php');
     <div class="d-flex justify-content-center mt-3 mb-5">
         <a href="index.php" class="btn btn-light mx-2">戻る</a>
     </div>
+    <?php else: ?>
+        <?php
+            $uri = "index.php";
+            header("Location: ".$uri, true, 303);
+        ?>
     <?php endif; ?>
 </div>
 <?php
