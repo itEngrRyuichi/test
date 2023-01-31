@@ -9,7 +9,7 @@ include('./common/upper_html.php');
             <label class="orderer-label mt-3 mb-1 px-4 d-flex">商品情報</label>
             
             <div class="productInfo mx-5 my-3" id="wall1">
-                <label for="design" class="">柄・デザイン (<span id="wall_count">1</span>枚目)</label>
+                <label for="design" class="">ウォールペーパーデザイン  (<span id="wall_count">1</span>枚目)</label>
                 <div class="row align-items-center  mx-5">
                     <div class="col-2 designPics">
                         <img src="./img/01.png" alt="wallpaper01" onclick="wall1(this)" class="wall1_img" id="img_wall_01">
@@ -76,7 +76,7 @@ include('./common/upper_html.php');
 
             <div class="productInfo mx-5 my-3" id="wall2" style="display: none;">
                 <hr>
-                <label for="design" class="">柄・デザイン (<span id="wall_count">2</span>枚目)</label>
+                <label for="design" class="">ウォールペーパーデザイン  (<span id="wall_count">2</span>枚目)</label>
                 <div class="row align-items-center  mx-5">
                     <div class="col-2 designPics">
                         <img src="./img/01.png" alt="wallpaper01" onclick="wall2(this)" class="wall2_img" id="img_wall_01">
@@ -143,7 +143,7 @@ include('./common/upper_html.php');
 
             <div class="productInfo mx-5 my-3" id="wall3" style="display: none;">
                 <hr>
-                <label for="design" class="">柄・デザイン (<span id="wall_count">3</span>枚目)</label>
+                <label for="design" class="">ウォールペーパーデザイン (<span id="wall_count">3</span>枚目)</label>
                 <div class="row align-items-center  mx-5">
                     <div class="col-2 designPics">
                         <img src="./img/01.png" alt="wallpaper01" onclick="wall3(this)" class="wall3_img" id="img_wall_01">

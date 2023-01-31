@@ -38,7 +38,7 @@ include('./common/upper_html.php');
             <label class="orderer-label mt-3 mb-1 px-4 d-flex">商品情報</label>
             <div class="productInfo mx-5">
                 <div class="row">
-                    <div class="col-3">柄・デザイン (1枚目)</div>
+                    <div class="col-3">ウォールペーパーデザイン (1枚目)</div>
                     <div class="col-2 designPics">
                         <?php if ($_POST['wallpaper1'] == "img_wall_01"): ?>
                             <img src="./img/01.png" alt="wallpaper01">
@@ -98,7 +98,7 @@ include('./common/upper_html.php');
                 <hr>
                 <div class="productInfo mx-5">
                     <div class="row">
-                        <div class="col-3">柄・デザイン (2枚目)</div>
+                        <div class="col-3">ウォールペーパーデザイン  (2枚目)</div>
                         <div class="col-2 designPics">
                             <?php if ($_POST['wallpaper2'] == "img_wall_01"): ?>
                                 <img src="./img/01.png" alt="wallpaper01">
@@ -159,7 +159,7 @@ include('./common/upper_html.php');
                 <hr>
                 <div class="productInfo mx-5">
                     <div class="row">
-                        <div class="col-3">柄・デザイン (3枚目)</div>
+                        <div class="col-3">ウォールペーパーデザイン  (3枚目)</div>
                         <div class="col-2 designPics">
                             <?php if ($_POST['wallpaper3'] == "img_wall_01"): ?>
                                 <img src="./img/01.png" alt="wallpaper01">
